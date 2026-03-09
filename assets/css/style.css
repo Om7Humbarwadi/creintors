@@ -3745,7 +3745,7 @@ body.nav-active .header-top .header-container .menu-icon:hover .text-menu .text-
 
 .nav, .nav-content {
   position: absolute;
-  width: 60%;
+  width: 100%;
   height: 100vh;
   top: 0;
   left: 0;
@@ -3763,7 +3763,7 @@ body.nav-active .header-top .header-container .menu-icon:hover .text-menu .text-
 .nav:before, .nav-content:before, .nav:after, .nav-content:after {
   content: "";
   position: fixed;
-  width: 60%;
+  width: 100%;
   height: 100vh;
   left: 0;
   top: 0;
@@ -3791,7 +3791,14 @@ body.nav-active .header-top .header-container .menu-icon:hover .text-menu .text-
   }
 }
 
-.nav:after, .nav-content:after {
+.nav:after {
+  background: #212121;
+  -webkit-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.nav-content:after {
   background: #212121;
   -webkit-transition-delay: 0.1s;
   -o-transition-delay: 0.1s;
@@ -3924,7 +3931,7 @@ body.nav-active .header-top .header-container .menu-icon:hover .text-menu .text-
 }
 
 .nav-content {
-  width: 40%;
+  width: 20%;
   right: 0;
   left: auto;
 }
@@ -3943,7 +3950,7 @@ body.nav-active .header-top .header-container .menu-icon:hover .text-menu .text-
 .nav-content:before, .nav-content:after {
   content: "";
   position: fixed;
-  width: 40%;
+  width: 20%;
   right: 0;
   left: auto;
   -webkit-transform: translateX(100%) translateY(0%);
@@ -3981,6 +3988,8 @@ body.nav-active .header-top .header-container .menu-icon:hover .text-menu .text-
 .nav-content address span {
   display: block;
 }
+
+
 
 body.nav-active {
   overflow: hidden !important;
@@ -4283,6 +4292,8 @@ body.nav-active .nav address:nth-of-type(5) span, body.nav-active .nav-content a
   transition: transform 0.5s cubic-bezier(0.31, 1.37, 0.68, -0.36) 3000ms, opacity 0.3s cubic-bezier(0.31, 1.37, 0.68, -0.36) 3200ms, visibility 0.3s 1725ms;
   transition: transform 0.5s cubic-bezier(0.31, 1.37, 0.68, -0.36) 3000ms, opacity 0.3s cubic-bezier(0.31, 1.37, 0.68, -0.36) 3200ms, visibility 0.3s 1725ms, -webkit-transform 0.5s cubic-bezier(0.31, 1.37, 0.68, -0.36) 3000ms;
 }
+
+
 
 /* -------------------------------------------------------
                    Navbar Fixed Top
@@ -9594,9 +9605,9 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 
 .dsn-slider .dsn-root-slider {
   position: relative;
-  width: 80%;
+  width: 100%;
   height: 100%;
-  left: 20%;
+  left: 10;
   overflow: hidden;
 }
 
@@ -12755,9 +12766,5 @@ footer .copyright-social ul li:last-child {
 }
 
 /*# sourceMappingURL=style.css.map */
-
-
-
-
 
 
